@@ -377,4 +377,62 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   height: 12px;
   flex-shrink: 0;
   border: 1px solid #424928;
+}
+
+.transperancy {
+  padding-top: 125px;
+}
+.transperancy h2 {
+  color: #212806;
+  text-align: center;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64.8px;
+}
+.transperancy .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 80px;
+}
+.transperancy .flex__container {
+  padding-top: 70px;
+  margin-bottom: 90px;
+  display: flex;
+  gap: 33px;
+}
+.transperancy .flex__container .flex__block:nth-child(1) {
+  padding: 0 36px;
+}
+.transperancy .flex__container .flex__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.transperancy .flex__container .flex__block .description {
+  color: #212806;
+  padding-top: 14px;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.28px;
+}
+.transperancy .shop__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 40px;
+  border: 1px solid #212806;
+  background: #212806;
+  width: 180px;
+  padding: 0px 28px;
+  height: 47px;
+}
+.transperancy .shop__button a {
+  color: #fcf8f3;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 25.2px;
 }/*# sourceMappingURL=style.css.map */
