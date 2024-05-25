@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Roboto";
+  color: #222;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: #fcf8f3;
+}
+header p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 18px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 11px 0 0 29px;
+}
+header .flex {
+  display: flex;
+  align-items: center;
+}
+header .main__block {
+  justify-content: start;
+  max-width: 1171.859px;
+  width: 100%;
+  padding-left: 43px;
+}
+header .gap {
+  gap: 20px;
+}
+header .shop {
+  width: 95px;
+}
+header .about {
+  width: 105px;
+}
+header .about p {
+  font-size: 1.7rem;
+}
+header .sustainability p {
+  font-size: 1.8rem;
+}
+header .images {
+  gap: 29px;
+}
+header .burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  z-index: 2;
+  transition: 500ms all;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #665f55;
+  border-radius: 50%;
+}
+header .burger.burgeroff .burger_line:first-child {
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+header .burger.burgeroff .burger_line:last-child {
+  transform: rotate(45deg) translate(-3px, -3px);
+}
+header .burger .burger_line {
+  width: 16px;
+  height: 2px;
+  margin: 3px 0;
+  background-color: #403f3d;
+  transition: 500ms all;
+}
+
+.burger_menu {
+  background: #fff;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 80px 40px 20px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  transition: 500ms all;
+  display: flex;
+  z-index: 1;
+}
+.burger_menu.opened {
+  left: 0;
+}
+.burger_menu .burger_menu_links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.burger_menu .burger_menu_links ul li {
+  list-style: none;
+}
+.burger_menu .burger_menu_links ul .nav_items_text {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 125%;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
