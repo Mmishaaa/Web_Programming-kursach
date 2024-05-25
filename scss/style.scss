@@ -507,3 +507,42 @@ header {
         }
     }
 }
+
+.explore {
+    padding-top: 220px;
+    .container {
+        padding: 0 72px;
+    }
+    h3 {
+        color: $base-font-color;
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 64.8px;
+        width: 481px;
+    }
+    p {
+        padding-top: 15px;
+        color: $base-font-color;
+        text-align: center;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35.28px;
+    }
+    .flex__container {
+        padding-top: 70px;
+        display: flex;
+        gap: 15px;
+        .flex__block {
+            position: relative;
+            .background {
+                width: 422px;
+                height: 70px;
+                flex-shrink: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
