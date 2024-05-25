@@ -1,4 +1,4 @@
-$base-font-color: #222;
+$base-font-color: #212806;
 $link-color: #f46a35;
 $base-font-size: 10px;
 $base-font-family: "Roboto";
@@ -38,6 +38,7 @@ button {
 
 header {
     background-color: #fcf8f3;
+    height: 68.375px;
     p {
         font-size: 1.6rem;
         font-weight: 400;
@@ -139,5 +140,49 @@ header {
                 }
             }
         }
+    }
+}
+
+.shop-section {
+    p {
+        color: $base-font-color;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    h1 {
+        color: $base-font-color;
+        font-size: 6.5rem;
+        font-weight: 400;
+        line-height: 77.76px;
+        max-width: 583.188px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+    .shop__button {
+        border-radius: 40px;
+        border: 1px solid #212806;
+        background: #212806;
+        width: 180px;
+        padding: 0px 28px;
+        height: 47px;
+        a {
+            color: #fcf8f3;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 25.2px;
+        }
+    }
+    .container {
+        padding-top: 23%;
+        padding-left: 5%;
+        height: 800px;
+        background: url(../assets/png//shopBackground.png) 0px -70px no-repeat;
     }
 }

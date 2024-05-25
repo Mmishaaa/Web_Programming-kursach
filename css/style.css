@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-size: 10px;
   font-family: "Roboto";
-  color: #222;
+  color: #212806;
 }
 
 .container {
@@ -34,6 +34,7 @@ button {
 
 header {
   background-color: #fcf8f3;
+  height: 68.375px;
 }
 header p {
   font-size: 1.6rem;
@@ -130,4 +131,46 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   font-weight: 600;
   line-height: 125%;
   text-decoration: none;
+}
+
+.shop-section p {
+  color: #212806;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.shop-section h1 {
+  color: #212806;
+  font-size: 6.5rem;
+  font-weight: 400;
+  line-height: 77.76px;
+  max-width: 583.188px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.shop-section .flex {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.shop-section .shop__button {
+  border-radius: 40px;
+  border: 1px solid #212806;
+  background: #212806;
+  width: 180px;
+  padding: 0px 28px;
+  height: 47px;
+}
+.shop-section .shop__button a {
+  color: #fcf8f3;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 25.2px;
+}
+.shop-section .container {
+  padding-top: 23%;
+  padding-left: 5%;
+  height: 800px;
+  background: url(../assets/png//shopBackground.png) 0px -70px no-repeat;
 }/*# sourceMappingURL=style.css.map */
