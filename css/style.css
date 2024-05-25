@@ -325,4 +325,56 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 28.8px;
+}
+
+.adv {
+  background-color: #f5eee6;
+  display: flex;
+  gap: 290px;
+}
+.adv .stars {
+  padding-top: 110px;
+}
+.adv .block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.adv .block h2 {
+  padding-top: 45px;
+  color: #212806;
+  text-align: center;
+  font-size: 4.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51.84px;
+  max-width: 419px;
+  width: 100%;
+  text-align: center;
+}
+.adv .block p {
+  padding-top: 62px;
+  color: #212806;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.adv .block .options {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.adv .block .options .square:first-child {
+  background-color: #424928;
+}
+.adv .block .options .square {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border: 1px solid #424928;
 }/*# sourceMappingURL=style.css.map */
