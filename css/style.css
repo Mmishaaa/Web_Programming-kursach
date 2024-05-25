@@ -236,4 +236,93 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 25.2px;
+}
+
+.best__sellers {
+  padding-bottom: 171px;
+}
+.best__sellers .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.best__sellers h3 {
+  color: #212806;
+  padding-top: 62px;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51.84px;
+  letter-spacing: 2px;
+}
+.best__sellers p {
+  padding-top: 15px;
+  color: rgba(33, 40, 6, 0.8);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+.best__sellers .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  gap: 18px;
+  border-radius: 40px;
+  border: 1px solid #212806;
+  background: #212806;
+  width: 229px;
+  height: 47px;
+  flex-shrink: 0;
+}
+.best__sellers .link p {
+  color: #fcf8f3;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px;
+  padding-top: 0px;
+}
+.best__sellers .arrows {
+  display: flex;
+  gap: 15px;
+  padding-top: 50px;
+}
+.best__sellers .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-top: 233px;
+  padding-left: 99px;
+}
+.best__sellers .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.best__sellers .card .subtitle {
+  color: #212806;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-transform: uppercase;
+}
+.best__sellers .card .title {
+  color: #212806;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 35.28px;
+}
+.best__sellers .card .price {
+  color: #212806;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28.8px;
 }/*# sourceMappingURL=style.css.map */
