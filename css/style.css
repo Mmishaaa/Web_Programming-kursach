@@ -173,4 +173,5 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   padding-left: 5%;
   height: 800px;
   background: url(../assets/png//shopBackground.png) 0px -70px no-repeat;
+  background-size: contain;
 }/*# sourceMappingURL=style.css.map */
