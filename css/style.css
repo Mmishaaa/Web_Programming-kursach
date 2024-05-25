@@ -98,8 +98,7 @@ header .burger .burger_line {
   background-color: #403f3d;
   transition: 500ms all;
 }
-
-.burger_menu {
+header .burger_menu {
   background: #fff;
   left: 100%;
   top: 0;
@@ -114,19 +113,19 @@ header .burger .burger_line {
   display: flex;
   z-index: 1;
 }
-.burger_menu.opened {
+header .burger_menu.opened {
   left: 0;
 }
-.burger_menu .burger_menu_links ul {
+header .burger_menu .burger_menu_links ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-.burger_menu .burger_menu_links ul li {
+header .burger_menu .burger_menu_links ul li {
   list-style: none;
 }
-.burger_menu .burger_menu_links ul .nav_items_text {
+header .burger_menu .burger_menu_links ul .nav_items_text {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 125%;
