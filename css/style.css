@@ -576,13 +576,11 @@ footer a {
 footer .container {
   padding: 0 26px;
 }
-footer .line {
-  width: 318.594px;
-  height: 1px;
-  margin-bottom: 22px;
-}
 footer .title {
   margin-bottom: 27px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(252, 248, 243, 0.8);
+  width: 100%;
 }
 footer .links {
   display: flex;
@@ -604,6 +602,10 @@ footer .flex__container {
   display: flex;
   gap: 36px;
   margin-bottom: 100px;
+}
+footer .flex__container .flex__block {
+  max-width: 318.594px;
+  width: 100%;
 }
 footer .flex__container .flex__block ul {
   display: flex;
