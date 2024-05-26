@@ -532,4 +532,24 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.hi .container {
+  padding: 0px 72px;
+}
+.hi h3 {
+  padding-top: 260px;
+  font-size: 4rem;
+}
+.hi .title {
+  color: #212806;
+  text-align: center;
+  font-size: 3.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 51.84px;
+}
+.hi .flex__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
