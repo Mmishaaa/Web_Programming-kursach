@@ -1,6 +1,5 @@
 class BurgerMenu {
   init() {
-    console.log("here")
       document.querySelector('.burger_menu').addEventListener('click', this.hideBurger.bind(this));
 
       document.querySelector('.burger').addEventListener('click', this.toggleBurger.bind(this));
