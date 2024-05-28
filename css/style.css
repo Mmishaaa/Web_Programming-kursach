@@ -110,6 +110,7 @@ header .right .contact {
   transition: 300ms all;
 }
 header .right .burger {
+  cursor: pointer;
   display: none;
   width: 44px;
   height: 44px;
@@ -162,6 +163,7 @@ header .burger_menu .burger_menu_links ul li {
   list-style: none;
 }
 header .burger_menu .burger_menu_links ul .nav_items_text {
+  cursor: pointer;
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 125%;
