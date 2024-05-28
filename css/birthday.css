@@ -32,6 +32,10 @@ button {
   cursor: pointer;
 }
 
+body {
+  background-color: #f5eee6;
+}
+
 header .container {
   display: flex;
   align-items: center;
