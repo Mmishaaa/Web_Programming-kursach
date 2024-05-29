@@ -159,6 +159,7 @@ header {
         display: block;
     }
     .modal {
+        background-color: antiquewhite;
         height: 100%;
         width: 100%;
         position: relative;
@@ -167,7 +168,6 @@ header {
         transform: translate(-50%, -50%);
         padding: 16px;
         border-radius: 40px;
-        background: #fff;
         display: flex;
         align-items: center;
         justify-content: center;

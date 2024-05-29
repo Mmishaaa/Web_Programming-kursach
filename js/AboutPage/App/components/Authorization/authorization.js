@@ -15,7 +15,6 @@ class Authorization {
     init() {
         console.log("init")
         document.querySelector('.logIn').addEventListener('click', this.open.bind(this));
-        document.querySelector('.logIn_burger').addEventListener('click', this.open.bind(this));
         document.querySelector('.cross_authorization').addEventListener('click', this.clear.bind(this));
         document.querySelector('.modalAuthorization_Background').addEventListener('click', this.back.bind(this));
         document.querySelector('.inputEmailAuthorization').addEventListener('input', this.validationEmail.bind(this));
@@ -114,7 +113,6 @@ checkValidation() {
                 this.clear();
 
                 this.localStorage.set('user', JSON.stringify(user));
-
                 this.changePage();
 
                 document.querySelector('.submitAuthorization').disabled = true;

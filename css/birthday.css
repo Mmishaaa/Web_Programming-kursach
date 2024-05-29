@@ -609,6 +609,7 @@ footer .info p:last-child {
   display: block;
 }
 .modal_background .modal {
+  background-color: antiquewhite;
   height: 100%;
   width: 100%;
   position: relative;
@@ -617,7 +618,6 @@ footer .info p:last-child {
   transform: translate(-50%, -50%);
   padding: 16px;
   border-radius: 40px;
-  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
