@@ -2,6 +2,7 @@ import ChangeTheme from "./components/ChangeTheme/changeTheme.js"
 import Translator from "./components/Translator/translator.js";
 import Authorization from "./components/Authorization/authorization.js";
 import Registration from "./components/Registration/registration.js";
+import Logout from "./components/Logout/logout.js";
 
 class App {
   init() {
@@ -16,6 +17,9 @@ class App {
 
     const registration = new Registration();
     registration.init();
+
+    const logout = new Logout();
+    logout.init();
   }
 }
 
