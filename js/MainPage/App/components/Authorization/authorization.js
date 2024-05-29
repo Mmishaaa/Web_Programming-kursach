@@ -1,8 +1,9 @@
-import CustomLocalStorage from "../../../CustomLocalStorage/customLocalStorage.js";
+import CustomLocalStorage from "../../../../CustomLocalStorage/customLocalStorage.js";
+
 class Registration {
+
     localStorage = new CustomLocalStorage();
-
-
+    
     emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
 
@@ -114,8 +115,8 @@ checkValidation() {
 
                 this.localStorage.set('user', JSON.stringify(user));
 
-                this.changeTheme(user.theme);
-                changeLang(user.lang);
+                //this.changeTheme(user.theme);
+                //changeLang(user.lang);
                 this.changePage();
 
                 document.querySelector('.submitAuthorization').disabled = true;
@@ -128,6 +129,20 @@ checkValidation() {
             document.querySelector('.mistakeMessageEmailAuthorization').textContent = 'There isn\'t such user';
         }
     }
+}
+
+changePage() {
+    document.querySelector('.logIn').classList.add('hidden');
+    document.querySelector('.logIn_burger').classList.add('hidden');
+    document.querySelector('.sighIn').classList.add('hidden');
+    document.querySelector('.sighIn_burger').classList.add('hidden');
+
+    document.querySelector('.logout').classList.remove('hidden');
+    document.querySelector('.logout_burger').classList.remove('hidden');
+
+    document.querySelectorAll('.open').forEach((elem) => {
+        elem.classList.remove('hidden');
+    });
 }
 }
 

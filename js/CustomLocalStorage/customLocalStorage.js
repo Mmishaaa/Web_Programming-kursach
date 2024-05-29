@@ -1,4 +1,4 @@
-class LocalStorage {
+class CustomLocalStorage {
 set(key, value) {
     localStorage.setItem(key, value);
 }
@@ -16,4 +16,4 @@ clear() {
 }
 }
 
-export default LocalStorage;
+export default CustomLocalStorage;

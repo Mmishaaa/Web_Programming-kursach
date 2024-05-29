@@ -1047,6 +1047,7 @@ footer .bottom div {
   display: block;
 }
 .modal_background .modal {
+  background-color: antiquewhite;
   height: 100%;
   width: 100%;
   position: relative;
@@ -1055,7 +1056,6 @@ footer .bottom div {
   transform: translate(-50%, -50%);
   padding: 16px;
   border-radius: 40px;
-  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1098,6 +1098,7 @@ footer .bottom div {
   border: 1px solid #000;
   font-size: 2.5rem;
   border-bottom: 1px solid red;
+  background: #f5eee6;
 }
 .modalRegister_Background .modalRegister input.correct {
   border-bottom: 1px solid #000;
@@ -1166,6 +1167,7 @@ footer .bottom div {
   width: 100%;
 }
 .modalAuthorization_Background .modalAuthorization input {
+  background: #f5eee6;
   width: 100%;
   padding: 5px;
   border: 1px solid #000;
