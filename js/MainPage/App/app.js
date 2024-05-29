@@ -16,6 +16,7 @@ class App {
 
     const changeTheme = new ChangeTheme();
     changeTheme.init();
+
   }
 }
 export default App;
