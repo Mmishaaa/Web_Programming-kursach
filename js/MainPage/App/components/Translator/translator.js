@@ -75,12 +75,13 @@ const translate = {
     "73": "Repeat password",
     "74": "Authorization",
     "75": "Password",
-    "76": "Submit"
+    "76": "Submit",
+    "77": "Logout"
     },
   ru: {
     "1": "Магазин",
     "2": "О нас",
-    "3": "Открытка",
+    "3": "Открытки",
     "4": "Войти",
     "5": "Новый",
     "6": "ru",
@@ -153,11 +154,12 @@ const translate = {
     "73": "Повторите пароль",
     "74": "Зарегистрироваться",
     "75": "Пароль",
-    "76": "Отправить"
+    "76": "Отправить",
+    "77": "Выйти"
     }
 };
 
-class ChangeLang {
+class Translator {
   init() {
     document.querySelector('.changeLang').addEventListener('click', this.toggleLang.bind(this));
   }
@@ -197,4 +199,4 @@ class ChangeLang {
   }
 }
 
-export default ChangeLang;
+export default Translator;
