@@ -1,4 +1,4 @@
-import CustomLocalStorage from "../../../CustomLocalStorage/customLocalStorage.js"
+import CustomLocalStorage from "../../../../CustomLocalStorage/customLocalStorage.js"
 
 class Logout {
     customStorageHandler = new CustomLocalStorage();
