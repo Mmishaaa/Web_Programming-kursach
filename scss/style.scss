@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 li {
     list-style: none;
 }
@@ -525,6 +529,7 @@ header {
         width: 460px;
     }
     .link {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1457,4 +1462,9 @@ footer {
             }
         }
     }
+}
+
+.right__arrow,
+.left__arrow:hover {
+    cursor: pointer;
 }

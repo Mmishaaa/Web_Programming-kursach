@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 li {
   list-style: none;
 }
@@ -513,6 +517,7 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   font-weight: 700;
 }
 .birthday-card .link {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1333,4 +1338,9 @@ footer .bottom div {
 }
 .darkTheme .transperancy .flex__container .flex__block .description {
   color: #fff;
+}
+
+.right__arrow,
+.left__arrow:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
