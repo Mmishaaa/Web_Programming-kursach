@@ -1,6 +1,7 @@
 import BurgerMenu from "./components/BurgerMenu/burgerMenu.js";
 import Authorization from "./components/Authorization/authorization.js"
 import Registration from "./components/Registration/registration.js";
+import ChangeTheme from "./components/ChangeTheme/changeTheme.js";
 
 class App {
   init() {
@@ -12,6 +13,9 @@ class App {
 
     const registration = new Registration();
     registration.init();
+
+    const changeTheme = new ChangeTheme();
+    changeTheme.init();
   }
 }
 export default App;

@@ -1316,3 +1316,145 @@ footer {
         }
     }
 }
+.darkTheme {
+    background-color: #000;
+    color: #fff;
+    .shop-section {
+        .container {
+            background: url(../assets/png/shopBackground-Photoroom.png-Photoroom.png);
+        }
+    }
+    p,
+    h1,
+    h2,
+    h3 {
+        color: #fff;
+    }
+    a {
+        color: #fff;
+    }
+    svg {
+        fill: #fff;
+        stroke: #fff;
+    }
+    header {
+        background-color: #000;
+        .authorization {
+            span {
+                color: #fff;
+            }
+        }
+        .brex {
+            img {
+                background-color: #fff;
+                border-radius: 5px;
+            }
+        }
+        .navigation {
+            ul {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .logIn,
+        .sighIn,
+        .logout {
+            color: #fff;
+        }
+        .changeLang {
+            color: #fff;
+        }
+        .right {
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+        .controls {
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+        .burger_menu {
+            background-color: #000;
+            li {
+                span,
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .sustainability {
+        .link {
+            border-color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+
+        .feedback {
+            background-color: #000;
+            p {
+                color: #fff;
+            }
+        }
+    }
+    .birthday-card {
+        .description {
+            color: #fff;
+            span {
+                color: #fff;
+            }
+        }
+        .link {
+            border-color: #fff;
+            p {
+                color: #fff;
+            }
+        }
+    }
+    .best__sellers {
+        .card {
+            p {
+                color: #fff;
+            }
+        }
+    }
+
+    footer {
+        background-color: #000;
+    }
+    .adv {
+        background-color: #000;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .explore {
+        background-color: #000;
+        .flex__container {
+            .flex__block {
+                .background {
+                    background-color: #000 !important;
+                }
+            }
+        }
+    }
+    .transperancy {
+        .flex__container {
+            .flex__block {
+                .description {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
