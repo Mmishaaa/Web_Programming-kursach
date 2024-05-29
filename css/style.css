@@ -1230,4 +1230,107 @@ footer .bottom div {
   background-color: #ffaaaa;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.darkTheme {
+  background-color: #000;
+  color: #fff;
+}
+.darkTheme .shop-section .container {
+  background: url(../assets/png/shopBackground-Photoroom.png-Photoroom.png);
+}
+.darkTheme p,
+.darkTheme h1,
+.darkTheme h2,
+.darkTheme h3 {
+  color: #fff;
+}
+.darkTheme a {
+  color: #fff;
+}
+.darkTheme svg {
+  fill: #fff;
+  stroke: #fff;
+}
+.darkTheme header {
+  background-color: #000;
+}
+.darkTheme header .authorization span {
+  color: #fff;
+}
+.darkTheme header .brex img {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.darkTheme header .navigation ul a {
+  color: #fff;
+}
+.darkTheme header .logIn,
+.darkTheme header .sighIn,
+.darkTheme header .logout {
+  color: #fff;
+}
+.darkTheme header .changeLang {
+  color: #fff;
+}
+.darkTheme header .right svg path {
+  fill: #fff;
+}
+.darkTheme header .controls svg path {
+  fill: #fff;
+}
+.darkTheme header .burger_menu {
+  background-color: #000;
+}
+.darkTheme header .burger_menu li span,
+.darkTheme header .burger_menu li a {
+  color: #fff;
+}
+.darkTheme .sustainability .link {
+  border-color: #fff;
+}
+.darkTheme .sustainability .link a {
+  color: #fff;
+}
+.darkTheme .sustainability .feedback {
+  background-color: #000;
+}
+.darkTheme .sustainability .feedback p {
+  color: #fff;
+}
+.darkTheme .birthday-card .description {
+  color: #fff;
+}
+.darkTheme .birthday-card .description span {
+  color: #fff;
+}
+.darkTheme .birthday-card .link {
+  border-color: #fff;
+}
+.darkTheme .birthday-card .link p {
+  color: #fff;
+}
+.darkTheme .best__sellers .card p {
+  color: #fff;
+}
+.darkTheme footer {
+  background-color: #000;
+}
+.darkTheme .adv {
+  background-color: #000;
+}
+.darkTheme .adv h2 {
+  color: #fff;
+}
+.darkTheme .adv p {
+  color: #fff;
+}
+.darkTheme .explore {
+  background-color: #000;
+}
+.darkTheme .explore .flex__container .flex__block .background {
+  background-color: #000 !important;
+}
+.darkTheme .transperancy .flex__container .flex__block .description {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
