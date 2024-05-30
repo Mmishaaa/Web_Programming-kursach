@@ -136,7 +136,7 @@ changePage() {
     document.querySelector('.sighIn_burger').classList.add('hidden');
 
     document.querySelector('.logout').classList.remove('hidden');
-    document.querySelector('.logout_burger').classList.remove('hidden');
+    document.querySelector('.logout_burger').classList.remove("hidden");
 
     document.querySelectorAll('.open').forEach((elem) => {
         elem.classList.remove('hidden');
