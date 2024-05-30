@@ -1304,4 +1304,46 @@ footer .info p:last-child {
   .learn_more:hover span {
     text-decoration: underline;
   }
+}
+.pagination-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pagination-section .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.pagination-section .posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.pagination-section .post {
+  font-size: 2rem;
+  padding: 8px;
+  border-color: bisque;
+  border: 1px;
+}
+.pagination-section .pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination-section .pagination__list {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.pagination-section .pagination__item {
+  font-size: 1.6rem;
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+.pagination-section .pagination__item--active {
+  font-weight: 800;
+  color: blue;
 }/*# sourceMappingURL=birthday.css.map */

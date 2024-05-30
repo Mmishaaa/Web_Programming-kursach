@@ -4,6 +4,7 @@ import Logout from "./components/Logout/logout.js";
 import Registration from "./components/Registration/registration.js";
 import Slider from "./components/Slider/slider.js";
 import Translator from "./components/Translator/translator.js";
+import Pagination from "./components/Pagination/pagination.js"
 
 class App {
   init() {
@@ -24,6 +25,9 @@ class App {
 
     const logout = new Logout();
     logout.init();
+
+    const pagination = new Pagination();
+    pagination.init();
   }
 }
 
