@@ -4,6 +4,7 @@ import Registration from "./components/Registration/registration.js";
 import ChangeTheme from "./components/ChangeTheme/changeTheme.js";
 import Translator from "./components/Translator/translator.js"
 import Logout from "./components/Logout/logout.js";
+import Account from "./components/Account/account.js";
 
 class App {
   init() {
@@ -24,6 +25,9 @@ class App {
 
     const logout = new Logout();
     logout.init();
+
+    const accountDisplayy = new Account();
+    accountDisplayy.init();
   }
 }
 export default App;
