@@ -271,5 +271,14 @@
             </div>
         </div>
         <script type="module" src="../js/AboutPage/index.js"></script>
+        <script>
+            console.log("LOADED!");
+            window.addEventListener("load", () => {
+                const user = JSON.parse(this.localStorageHandler.get("user"));
+                if (user) {
+                    console.log("REGISTRED!");
+                }
+            });
+        </script>
     </body>
 </html>

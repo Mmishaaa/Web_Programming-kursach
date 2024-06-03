@@ -6,7 +6,7 @@ class Logout {
     init() {
         document.querySelector('.logout').addEventListener('click', this.logout.bind(this));
 
-        document.querySelector('.logout_burger').addEventListener('click', this.logout.bind(this));
+       // document.querySelector('.logout_burger').addEventListener('click', this.logout.bind(this));
     }
 
     logout() {
