@@ -3,6 +3,7 @@ import Translator from "./components/Translator/translator.js";
 import Authorization from "./components/Authorization/authorization.js";
 import Registration from "./components/Registration/registration.js";
 import Logout from "./components/Logout/logout.js";
+import CustomLocalStorage from "../../CustomLocalStorage/customLocalStorage.js";
 
 class App {
   init() {
@@ -20,6 +21,15 @@ class App {
 
     const logout = new Logout();
     logout.init();
+
+    window.addEventListener("load", () => {
+      const customLocalStorage = new CustomLocalStorage(); 
+      const user = JSON.parse(customLocalStorage.get("user"));
+      if (user) {
+          console.log("REGISTRED!");
+      }
+      console.log("About LOADED")
+  });
   }
 }
 
