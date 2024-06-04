@@ -39,7 +39,7 @@ class Account {
         document.querySelector('.account_birthday').textContent = user.birthday;
         document.querySelector('.account_number').textContent = user.number;
         document.querySelector('.account_email').textContent = user.email;
-        document.querySelector('.account_password').textContent = user.password;
+        //document.querySelector('.account_password').textContent = user.password;
     }
 }
 

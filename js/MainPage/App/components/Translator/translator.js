@@ -1,3 +1,5 @@
+import CustomLocalStorage from "../../../../CustomLocalStorage/customLocalStorage.js";
+
 const translate = {
   en: {
     "1": "Shop",
@@ -172,16 +174,36 @@ const translate = {
 };
 
 class Translator {
+  customLocalStorage = new CustomLocalStorage();
+
   init() {
     document.querySelector('.changeLang').addEventListener('click', this.toggleLang.bind(this));
   }
 
   toggleLang() {
-    if (document.querySelector('.changeLang').textContent === 'en') {
-      this.changeLang('ru');
-    } else {
-      this.changeLang('en');
+    const user = JSON.parse(this.customLocalStorage.get('user'));
+        
+    if (!user) {
+        if(document.querySelector('.changeLang').textContent === 'en') {
+          this.changeLang('ru');
+        }
+        else {
+          this.changeLang('en');
+        }
+        
+        return;
     }
+
+    if(document.querySelector('.changeLang').textContent === 'en') {
+        this.changeLang('ru');
+        user.lang = 'ru';
+    }
+    else {
+        this.changeLang('en');
+        user.lang = 'en';
+    }
+
+    this.customLocalStorage.set('user', JSON.stringify(user));
   }
 
   changeLang(lang) {
@@ -191,10 +213,11 @@ class Translator {
 
     const elements = document.querySelectorAll('[data-i18]');
 
-    console.log(elements);  
+    //console.log(elements);  
 
     elements.forEach((element) => {
       const key = element.getAttribute('data-i18');
+      console.log(key + "-" + translation[key])
       const translatedText = translation[key];
 
       element.textContent = translatedText;

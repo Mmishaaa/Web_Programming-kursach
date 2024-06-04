@@ -26,6 +26,15 @@ class Logout {
 
         this.customStorageHandler.set('users', JSON.stringify(users));
         this.customStorageHandler.remove('user');
+        this.popUp();
+    }
+
+    popUp() {
+        const popUp = document.createElement('div');
+        popUp.textContent = 'YOU"VE SUCCESSFULLY LOGGED OFF!';
+        popUp.classList.add('popUp');
+        document.body.append(popUp);
+        setTimeout(() => popUp.remove(), 3000);
     }
 
     changePage() {

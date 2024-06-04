@@ -5,11 +5,12 @@ import ChangeTheme from "./components/ChangeTheme/changeTheme.js";
 import Translator from "./components/Translator/translator.js"
 import Logout from "./components/Logout/logout.js";
 import Account from "./components/Account/account.js";
-import Slider from './components/Slider/slider.js';
 import Pagination from "./components/Pagination/pagination.js";
-
+import CustomLocalStorage from "../../CustomLocalStorage/customLocalStorage.js";
 class App {
   init() {
+    const customLocalStorage = new CustomLocalStorage();
+
     const burgerMenu = new BurgerMenu();
     burgerMenu.init();
 
@@ -31,11 +32,20 @@ class App {
     const accountDisplayy = new Account();
     accountDisplayy.init();
 
-    //const slider = new Slider();
-    //slider.init(); 
-
     const pagination = new Pagination();
     pagination.init();
+
+    window.onload = () => {
+      const user = JSON.parse(customLocalStorage.get("user"));
+      if(user) {
+          authorization.changePage();
+          registration.changePage();
+          changeTheme.setTheme(user.theme);
+          translator.changeLang(user.lang);
+  
+          customLocalStorage.set('user', JSON.stringify(user));
+      }
+  };
 
   }
 }
