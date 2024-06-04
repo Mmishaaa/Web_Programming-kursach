@@ -30,6 +30,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 li {
@@ -207,6 +208,7 @@ header {
         gap: 26px;
     }
     .shop__button {
+        transition: all 0.3s;
         border-radius: 40px;
         border: 1px solid #212806;
         background: #212806;
@@ -218,6 +220,9 @@ header {
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 25.2px;
+        }
+        &:hover {
+            opacity: 0.5;
         }
     }
     .container {
@@ -273,6 +278,8 @@ header {
         gap: 63px;
     }
     .link {
+        background-color: #000000;
+        transition: all 0.5s;
         width: 201px;
         height: 47px;
         flex-shrink: 0;
@@ -288,6 +295,9 @@ header {
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 25.2px;
+        }
+        &:hover {
+            opacity: 0.5;
         }
     }
 }
@@ -317,6 +327,7 @@ header {
         line-height: 28.8px;
     }
     .link {
+        transition: all 0.5s;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -335,6 +346,9 @@ header {
             font-weight: 400;
             line-height: 25.2px;
             padding-top: 0px;
+        }
+        &:hover {
+            opacity: 0.5;
         }
     }
     .arrows {
@@ -472,6 +486,7 @@ header {
         }
     }
     .shop__button {
+        transition: all 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -487,6 +502,9 @@ header {
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 25.2px;
+        }
+        &:hover {
+            opacity: 0.5;
         }
     }
 }
@@ -530,6 +548,7 @@ header {
     }
     .link {
         cursor: pointer;
+        transition: all 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -546,6 +565,9 @@ header {
             font-weight: 400;
             line-height: 25.2px;
             width: 86px;
+        }
+        &:hover {
+            background-color: rgba(252, 248, 243, 0.8);
         }
     }
 }
