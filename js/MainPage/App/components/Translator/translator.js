@@ -181,6 +181,11 @@ class Translator {
   }
 
   toggleLang() {
+    // if (document.querySelector('.changeLang').textContent === 'en') {
+    //   this.changeLang('ru');
+    // } else {
+    //   this.changeLang('en');
+    // }
     const user = JSON.parse(this.customLocalStorage.get('user'));
         
     if (!user) {
@@ -202,7 +207,7 @@ class Translator {
         this.changeLang('en');
         user.lang = 'en';
     }
-
+    console.log(user)
     this.customLocalStorage.set('user', JSON.stringify(user));
   }
 

@@ -1,9 +1,11 @@
 import CustomLocalStorage from "../../../../CustomLocalStorage/customLocalStorage.js";
+import Translator from "../Translator/translator.js";
 
 class Authorization {
 
     localStorage = new CustomLocalStorage();
-    
+    translator = new Translator();
+
     emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
     passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
 
@@ -114,8 +116,13 @@ checkValidation() {
 
                 this.localStorage.set('user', JSON.stringify(user));
                 this.changePage();
+                console.log("AUTH LANG: " + user.lang);
+                this.translator.changeLang(user.lang);
+                this.changeTheme(user.theme);
+                this.changePage();
 
                 document.querySelector('.submitAuthorization').disabled = true;
+                this.popUp();
             }
             else {
                 document.querySelector('.mistakeMessagePasswordAuthorization').textContent = 'Incorrect password';
@@ -137,6 +144,24 @@ changePage() {
         elem.classList.remove('hidden');
     });
 }
+popUp() {
+    const popUp = document.createElement('div');
+    popUp.textContent = 'YOU"VE SUCCESSFULLY AUTHORIZED!';
+    popUp.classList.add('popUp');
+    document.body.append(popUp);
+    setTimeout(() => popUp.remove(), 3000);
 }
+
+changeTheme(theme) {
+    if (theme === 'light') {
+        document.body.classList.remove('darkTheme');
+    }
+    else {
+        document.body.classList.add('darkTheme');
+    }
+}
+}
+
+
 
 export default Authorization;
