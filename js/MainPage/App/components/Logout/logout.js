@@ -36,6 +36,7 @@ class Logout {
 
         document.querySelector('.logout').classList.add('hidden');
         document.querySelector('.logout_burger').classList.add('hidden');
+        document.querySelector('.pagination-section').classList.add("hidden");
 
         document.querySelectorAll('.open').forEach((elem) => {
             elem.classList.add('hidden');
