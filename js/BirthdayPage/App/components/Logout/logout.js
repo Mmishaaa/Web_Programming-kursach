@@ -32,6 +32,7 @@ class Logout {
         document.querySelector('.logIn').classList.remove('hidden');
         document.querySelector('.sighIn').classList.remove('hidden');
         document.querySelector('.logout').classList.add('hidden');
+        document.querySelector('.statements').classList.add("hidden");
 
         document.querySelectorAll('.open').forEach((elem) => {
             elem.classList.add('hidden');

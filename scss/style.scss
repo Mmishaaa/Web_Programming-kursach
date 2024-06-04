@@ -1468,3 +1468,107 @@ footer {
 .left__arrow:hover {
     cursor: pointer;
 }
+.statements {
+    .container {
+        padding: 0px 48px;
+    }
+    .slider {
+        padding: 30px 0;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .arrows {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        .arrow {
+            cursor: pointer;
+            transition: 300ms all;
+        }
+    }
+    .slider_container {
+        width: 300%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transition: 300ms all;
+        right: 0;
+    }
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 49px;
+        width: 100%;
+        .statement {
+            max-width: 680px;
+            color: #212121;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+        }
+        .author {
+            color: #212121;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.032rem;
+        }
+    }
+}
+
+.pagination-section {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .post {
+        font-size: 2rem;
+        padding: 8px;
+        border-color: bisque;
+        border: 1px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination__list {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    .pagination__item {
+        font-size: 1.6rem;
+        padding: 8px;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    .pagination__item--active {
+        font-weight: 800;
+        color: blue;
+    }
+}

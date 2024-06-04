@@ -374,7 +374,8 @@ class Registration {
         document.querySelector('.logIn').classList.add('hidden');
         document.querySelector('.sighIn').classList.add('hidden');
         document.querySelector('.logout').classList.remove('hidden');
-
+        document.querySelector('.statements').classList.remove("hidden");
+        
         document.querySelectorAll('.open').forEach((elem) => {
             elem.classList.remove('hidden');
         });
