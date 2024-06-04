@@ -365,8 +365,18 @@ class Registration {
                 this.changePage();
 
                 document.querySelector('.submitRegistration').disabled = true;
+                this.popUp();
             }
         }
+    }
+
+    popUp() {
+        console.log("POPUPPPP")
+        const popUp = document.createElement('div');
+        popUp.textContent = 'YOU"VE SUCCESSFULLY REGISTRED!';
+        popUp.classList.add('popUp');
+        document.body.append(popUp);
+        setTimeout(() => popUp.remove(), 3000);
     }
 
     changePage() {

@@ -622,3 +622,15 @@ header {
         }
     }
 }
+
+.popUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: #ffaaaa;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+}
