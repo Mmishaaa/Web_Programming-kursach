@@ -1,3 +1,5 @@
+import CustomLocalStorage from "../../../../CustomLocalStorage/customLocalStorage.js";
+
 const translate = {
   en: {
     "1": "Log in",
@@ -68,7 +70,11 @@ const translate = {
 };
 
 class Translator {
+  
+  customLocalStorage = new CustomLocalStorage();
+
   init() {
+    console.log("init")
     document.querySelector('.changeLang').addEventListener('click', this.toggleLang.bind(this));
   }
 
@@ -78,21 +84,42 @@ class Translator {
     } else {
       this.changeLang('en');
     }
+    const user = JSON.parse(this.customLocalStorage.get('user'));
+        
+    if (!user) {
+        if(document.querySelector('.changeLang').textContent === 'en') {
+          this.changeLang('ru');
+        }
+        else {
+          this.changeLang('en');
+        }
+        
+        return;
+    }
+
+    if(document.querySelector('.changeLang').textContent === 'en') {
+        //this.changeLang('ru');
+        user.lang = 'ru';
+    }
+    else {
+        // this.changeLang('en');
+        user.lang = 'en';
+    }
+
+    this.customLocalStorage.set('user', JSON.stringify(user));
   }
 
   changeLang(lang) {
+    console.log("changeLang")
     const translation = translate[lang];
 
     document.querySelector('.changeLang').textContent = lang;
 
     const elements = document.querySelectorAll('[data-i18]');
 
-    console.log(elements);  
-
     elements.forEach((element) => {
       const key = element.getAttribute('data-i18');
       const translatedText = translation[key];
-
       element.textContent = translatedText;
     });
 

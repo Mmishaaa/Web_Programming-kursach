@@ -1,13 +1,16 @@
+import Account from "./components/Account/account.js";
 import Authorization from "./components/Authorization/authorization.js";
 import ChangeTheme from "./components/ChangeTheme/changeTheme.js";
 import Logout from "./components/Logout/logout.js";
 import Registration from "./components/Registration/registration.js";
 import Slider from "./components/Slider/slider.js";
 import Translator from "./components/Translator/translator.js";
-//import Pagination from "./components/Pagination/pagination.js"
+import CustomLocalStorage from "../../CustomLocalStorage/customLocalStorage.js";
 
 class App {
   init() {
+    const customLocalStorage = new CustomLocalStorage();
+
     const slider = new Slider();
     slider.init();
 
@@ -26,8 +29,21 @@ class App {
     const logout = new Logout();
     logout.init();
 
-   // const pagination = new Pagination();
-    //pagination.init();
+    const account = new Account();
+    account.init();
+
+    window.onload = () => {
+      const user = JSON.parse(customLocalStorage.get("user"));
+      if(user) {
+        console.log("windowOnLoad")
+          authorization.changePage();
+          registration.changePage();
+          changeTheme.setTheme(user.theme);
+          translator.changeLang(user.lang);
+  
+          customLocalStorage.set('user', JSON.stringify(user));
+      }
+  };
   }
 }
 

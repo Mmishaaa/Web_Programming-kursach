@@ -5,8 +5,6 @@ class Logout {
 
     init() {
         document.querySelector('.logout').addEventListener('click', this.logout.bind(this));
-
-       // document.querySelector('.logout_burger').addEventListener('click', this.logout.bind(this));
     }
 
     logout() {
@@ -26,6 +24,7 @@ class Logout {
 
         this.customStorageHandler.set('users', JSON.stringify(users));
         this.customStorageHandler.remove('user');
+        this.popUp();
     }
 
     changePage() {
@@ -36,6 +35,14 @@ class Logout {
         document.querySelectorAll('.open').forEach((elem) => {
             elem.classList.add('hidden');
         });
+    }
+
+    popUp() {
+        const popUp = document.createElement('div');
+        popUp.textContent = 'YOU"VE SUCCESSFULLY LOGGED OFF!';
+        popUp.classList.add('popUp');
+        document.body.append(popUp);
+        setTimeout(() => popUp.remove(), 3000);
     }
 }
 

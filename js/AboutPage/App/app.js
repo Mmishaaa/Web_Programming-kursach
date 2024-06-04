@@ -1,3 +1,4 @@
+import Account from "./components/Account/account.js";
 import ChangeTheme from "./components/ChangeTheme/changeTheme.js"
 import Translator from "./components/Translator/translator.js";
 import Authorization from "./components/Authorization/authorization.js";
@@ -7,6 +8,8 @@ import CustomLocalStorage from "../../CustomLocalStorage/customLocalStorage.js";
 
 class App {
   init() {
+    const customLocalStorage = new CustomLocalStorage();
+
     const changeTheme = new ChangeTheme();
     changeTheme.init();
 
@@ -22,14 +25,29 @@ class App {
     const logout = new Logout();
     logout.init();
 
-    window.addEventListener("load", () => {
-      const customLocalStorage = new CustomLocalStorage(); 
-      const user = JSON.parse(customLocalStorage.get("user"));
-      if (user) {
-          console.log("REGISTRED!");
-      }
-      console.log("About LOADED")
-  });
+    const account = new Account();
+    account.init();
+
+  //   window.addEventListener("load", () => {
+  //     const customLocalStorage = new CustomLocalStorage(); 
+  //     const user = JSON.parse(customLocalStorage.get("user"));
+  //     if (user) {
+  //         console.log("REGISTRED!");
+  //     }
+  //     console.log("About LOADED")
+  // });
+  window.onload = () => {
+    const user = JSON.parse(customLocalStorage.get("user"));
+    if(user) {
+      console.log("windowOnLoad")
+        authorization.changePage();
+        registration.changePage();
+        changeTheme.setTheme(user.theme);
+        translator.changeLang(user.lang);
+
+        customLocalStorage.set('user', JSON.stringify(user));
+    }
+};
   }
 }
 

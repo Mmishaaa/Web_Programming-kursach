@@ -531,4 +531,15 @@ header .burger_menu .burger_menu_links ul .nav_items_text {
   .learn_more:hover span {
     text-decoration: underline;
   }
+}
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: #ffaaaa;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 15px;
 }/*# sourceMappingURL=about.css.map */

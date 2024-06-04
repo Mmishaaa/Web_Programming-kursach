@@ -12,7 +12,7 @@ remove(key) {
 }
 
 clear() {
-        localStorage.clear();
+    localStorage.clear();
 }
 }
 
