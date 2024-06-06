@@ -28,20 +28,12 @@ class App {
     const account = new Account();
     account.init();
 
-  //   window.addEventListener("load", () => {
-  //     const customLocalStorage = new CustomLocalStorage(); 
-  //     const user = JSON.parse(customLocalStorage.get("user"));
-  //     if (user) {
-  //         console.log("REGISTRED!");
-  //     }
-  //     console.log("About LOADED")
-  // });
   window.onload = () => {
     const user = JSON.parse(customLocalStorage.get("user"));
     if(user) {
       console.log("windowOnLoad")
         authorization.changePage();
-        registration.changePage();
+        //registration.changePage();
         changeTheme.setTheme(user.theme);
         translator.changeLang(user.lang);
 

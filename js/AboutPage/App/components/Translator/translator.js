@@ -12,17 +12,23 @@ const translate = {
     "8": "Account",
     "9": "Logout",
     "10": "Registration",
-    "11": "Name",
-    "12": "Last name",
-    "13": "Middle name",
-    "14": "Birthday",
-    "15": "Number",
+    "11": "Name: ",
+    "12": "Last name: ",
+    "13": "Middle name: ",
+    "14": "Birthday: ",
+    "15": "Number: ",
     "16": "Password",
     "17": "Repeat password",
     "18": "submitRegistration",
     "19": "Authorization",
     "20": "Password",
-    "21": "Submit"
+    "21": "Submit",
+    "22": "First name: ",
+    "23": "Last name: ",
+    "24": "Middle name: ",
+    "25": "Birthday: ",
+    "26": "Number: ",
+    "27": "Email: ",
     },
     ru: {
       "1": "Войти",
@@ -35,17 +41,23 @@ const translate = {
       "8": "Аккаунт",
       "9": "Выйти",
       "10": "Регистрация",
-      "11": "Имя",
-      "12": "Фамилия",
-      "13": "Отчество",
-      "14": "День рождения",
-      "15": "Номер",
+      "11": "Имя: ",
+      "12": "Фамилия: ",
+      "13": "Отчество: ",
+      "14": "День рождения: ",
+      "15": "Номер: ",
       "16": "Пароль",
       "17": "Повторите пароль",
       "18": "Зарегистрироваться",
       "19": "Авторизация",
       "20": "Пароль",
-      "21": "Отправить"
+      "21": "Отправить",
+      "22": "Имя: ",
+      "23": "Фамилия: ",
+      "24": "Отчество: ",
+      "25": "День рождения: ",
+      "26": "Номер телефона: ",
+      "27": "Email: ",
       }
 };
 
@@ -58,13 +70,15 @@ class Translator {
   }
 
   toggleLang() {
+    const user = JSON.parse(this.customLocalStorage.get('user'));
     if (document.querySelector('.changeLang').textContent === 'en') {
       this.changeLang('ru');
+      user.lang = 'ru';
     } else {
       this.changeLang('en');
+      user.lang = 'en';
     }
 
-    const user = JSON.parse(this.customLocalStorage.get('user'));
         
     if (!user) {
         if(document.querySelector('.changeLang').textContent === 'en') {
@@ -75,15 +89,6 @@ class Translator {
         }
         
         return;
-    }
-
-    if(document.querySelector('.changeLang').textContent === 'en') {
-        //this.changeLang('ru');
-        user.lang = 'ru';
-    }
-    else {
-        // this.changeLang('en');
-        user.lang = 'en';
     }
 
     this.customLocalStorage.set('user', JSON.stringify(user));

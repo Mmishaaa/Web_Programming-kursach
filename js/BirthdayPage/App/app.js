@@ -37,7 +37,7 @@ class App {
       if(user) {
         console.log("windowOnLoad")
           authorization.changePage();
-          registration.changePage();
+         // registration.changePage();
           changeTheme.setTheme(user.theme);
           translator.changeLang(user.lang);
   

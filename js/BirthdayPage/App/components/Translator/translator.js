@@ -22,17 +22,19 @@ const translate = {
     "18": "Account",
     "19": "Logout",
     "20": "Registration",
-    "21": "First name",
-    "22": "Last name",
-    "23": "Middle name",
-    "24": "Birthday",
-    "25": "Number",
+    "21": "First name: ",
+    "22": "Last name: ",
+    "23": "Middle name: ",
+    "24": "Birthday: ",
+    "25": "Number: ",
     "26": "Password",
     "27": "Repeat password",
     "28": "Submit",
     "29": "Authorization",
     "30": "Password",
-    "31": "Submit"
+    "31": "Submit",
+    "32": "Account",
+    "33": "Email: "
     },
     ru: {
       "1": "Войти",
@@ -55,17 +57,19 @@ const translate = {
       "18": "Аккаунт",
       "19": "Выйти",
       "20": "Регистрация",
-      "21": "Имя",
-      "22": "Фамилия",
-      "23": "Отчество",
-      "24": "Дата рождения",
-      "25": "Номер телефона",
+      "21": "Имя: ",
+      "22": "Фамилия: ",
+      "23": "Отчество: ",
+      "24": "Дата рождения: ",
+      "25": "Номер телефона: ",
       "26": "Пароль",
       "27": "Повторите пароль",
       "28": "Отправить",
       "29": "Авторизация",
       "30": "Пароль",
-      "31": "Отправить"
+      "31": "Отправить",
+      "32": "Аккаунт",
+      "33": "Email: "
       }
 };
 
@@ -79,12 +83,14 @@ class Translator {
   }
 
   toggleLang() {
+    const user = JSON.parse(this.customLocalStorage.get('user'));
     if (document.querySelector('.changeLang').textContent === 'en') {
       this.changeLang('ru');
+      user.lang = 'ru';
     } else {
       this.changeLang('en');
+      user.lang = 'en';
     }
-    const user = JSON.parse(this.customLocalStorage.get('user'));
         
     if (!user) {
         if(document.querySelector('.changeLang').textContent === 'en') {
@@ -95,15 +101,6 @@ class Translator {
         }
         
         return;
-    }
-
-    if(document.querySelector('.changeLang').textContent === 'en') {
-        //this.changeLang('ru');
-        user.lang = 'ru';
-    }
-    else {
-        // this.changeLang('en');
-        user.lang = 'en';
     }
 
     this.customLocalStorage.set('user', JSON.stringify(user));
