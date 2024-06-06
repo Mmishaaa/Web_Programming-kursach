@@ -163,9 +163,6 @@
                             <li class="nav_item logout_burger hidden">
                                 <span class="nav_items_text" data-i18="77">Logout</span>
                             </li>
-                            <!-- <li class="nav_item logout_burger hidden">
-                                <span class="nav_items_text" data-i18="78">Account</span>
-                            </li> -->
                             <li class="nav_item logIn_burger">
                                 <span class="nav_items_text" data-i18="4">Log in</span>
                             </li>
@@ -181,12 +178,6 @@
                             <li class="nav_item">
                                 <a class="nav_items_text" href="../html/birthday.html" data-i18="3">Sustainability</a>
                             </li>
-                            <!-- <li class="nav_item">
-                                <a class="nav_items_text" href="#See" data-i18="4">Empower</a>
-                            </li>
-                            <li class="nav_item">
-                                <a class="nav_items_text" href="#Resorces" data-i18="5">Resources</a>
-                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -268,7 +259,7 @@
                     </div>
                     <div data-i18="13" class="link">
                         <div>
-                            <a href="#">Sustainability</a>
+                            <a href="#" style="color: #f5efef">Sustainability</a>
                         </div>
                         <div>
                             <svg
@@ -279,10 +270,10 @@
                                 fill="none"
                             >
                                 <path
-                                    d="M23.4286 0C23.4286 3.5 29.1428 5.25 29.1428 7C29.1428 8.75 23.4286 9.91667 23.4286 14"
+                                    d="M23.4286 0C23.4286 3.5 29.1429 5.25 29.1429 7C29.1429 8.75 23.4286 9.91667 23.4286 14"
                                     stroke="#F5EEE6"
                                 />
-                                <path d="M29.1429 7H1.71428" stroke="#F5EEE6" />
+                                <path d="M29.1429 7H1.71429" stroke="#F5EEE6" />
                             </svg>
                         </div>
                     </div>
@@ -629,7 +620,6 @@
                 <div class="flex__container">
                     <div class="flex__block">
                         <p class="title" data-i18="43">Shop</p>
-                        <!-- <hr class="line" /> -->
                         <ul>
                             <li><a href="#" data-i18="44">Shop All</a></li>
                             <li><a href="#" data-i18="45">Greeting Cards</a></li>
@@ -639,7 +629,6 @@
                     </div>
                     <div class="flex__block">
                         <p class="title" data-i18="48">About</p>
-                        <!-- <hr class="line" /> -->
                         <ul>
                             <li><a href="#" data-i18="49">Our Story</a></li>
                             <li><a href="#" data-i18="50">Our Values</a></li>
@@ -649,7 +638,6 @@
                     </div>
                     <div class="flex__block">
                         <p class="title" data-i18="53">Customer Care</p>
-                        <!-- <hr class="line" /> -->
                         <ul>
                             <li><a href="#" data-i18="54">Contact Us</a></li>
                             <li><a href="#" data-i18="55">FAQs</a></li>
@@ -659,12 +647,11 @@
                     </div>
                     <div class="flex__block">
                         <p class="title" data-i18="58">Wholesale</p>
-                        <!-- <hr class="line" /> -->
                         <ul>
                             <li><a href="#" data-i18="59">Overview</a></li>
                             <li><a href="#" data-i18="60">Register as a Wholesaler</a></li>
                             <li><a href="#" data-i18="61">Access the Wholesale Store</a></li>
-                            <li><a href="#" data-i18="61" onclick="openModal()">We are on the map</a></li>
+                            <li><a href="#" data-i18="84" onclick="openModal()">We are on the map</a></li>
                         </ul>
                     </div>
                 </div>
@@ -882,7 +869,6 @@
                         <div><span data-i18="83">Number: </span><span class="account_number"></span></div>
                         <div><span>Email: </span><span class="account_email"></span></div>
                     </div>
-                    <!-- <button class="reset">Reset</button> -->
                 </div>
             </div>
         </div>
@@ -891,10 +877,7 @@
             function openModal() {
                 var modal = document.getElementById("modal");
                 modal.style.display = "block";
-
-                // Добавьте код для отображения карты в контейнере
                 var mapContainer = document.getElementById("map-container");
-                // Код для создания карты goes here
             }
 
             window.onclick = function (event) {
